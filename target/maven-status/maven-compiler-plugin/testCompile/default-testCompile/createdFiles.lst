@@ -1,3 +1,4 @@
 com\check24\tests\BaseTest.class
+com\check24\tests\HomeTests.class
 com\check24\tests\PaymentTest.class
 com\check24\tests\LoginTest.class

@@ -7,5 +7,11 @@ public interface FrameworkConfig extends Config {
     long timeout();
     String url();
     String browser();
-
+    String homePageTitle();
+    String email();
+    String card();
+    String date();
+    String cvv();
+    String zip();
+    String paymentSuccessMessage();
 }

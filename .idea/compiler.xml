@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Check24Project" />
         <module name="SimpleTestNgProject" />
+        <module name="WeatherShopperAutomation" />
       </profile>
     </annotationProcessing>
   </component>

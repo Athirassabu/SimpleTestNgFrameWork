@@ -4,10 +4,9 @@
     <listeners>
         <listener class-name="com.check24.listeners.TestListener"/>
     </listeners>
-    <test parallel="classes" thread-count="2" name="Check24">
+    <test parallel="classes" thread-count="1" name="Check24">
         <classes>
-            <class name="com.check24.tests.LoginTest"/>
-            <class name="com.check24.tests.PaymentTest"/>
+            <class name="com.check24.tests.WeatherShoppertest"/>
         </classes>
     </test>
 </suite>

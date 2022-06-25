@@ -109,7 +109,7 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.check24.tests.PaymentTest" class="method navigator-link" hash-for-method="loginTest(admin, admin1234, OrangeHRM4)">loginTest(admin, admin1234, OrangeHRM4)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.check24.tests.PaymentTest" class="method navigator-link" hash-for-method="loginTest(admin, admin1234, OrangeHRM)">loginTest(admin, admin1234, OrangeHRM)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
@@ -136,13 +136,39 @@
                   </a> <!-- loginTest(admin, admin1234, OrangeHRM) -->
                   <span class="method-name">loginTest</span>
                   <span class="parameters">(admin, admin1234, OrangeHRM)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.check24.reports.ExtentLogger.pass(ExtentLogger.java:11)
-	at com.check24.pages.LoginPage.enterUsername(LoginPage.java:19)
-	at com.check24.pages.LoginPage.loginToApplication(LoginPage.java:37)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: txtUsername (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.check24.utils.SeleniumUtils.waitUntilElementPresent(SeleniumUtils.java:36)
+	at com.check24.utils.SeleniumUtils.sendKeys(SeleniumUtils.java:25)
+	at com.check24.pages.LoginPage.enterUsername(LoginPage.java:21)
+	at com.check24.pages.LoginPage.loginToApplication(LoginPage.java:40)
 	at com.check24.tests.LoginTest.loginTest(LoginTest.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATSABU-7410&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\atsabu\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62270}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d81018c1124b4b59c5fa31aeb637825
+*** Element info: {Using=id, value=txtUsername}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 43 more
+... Removed 41 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Check the title of home page)                  </em>
@@ -158,20 +184,46 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(admin, admin1234, OrangeHRM4)">
-                  </a> <!-- loginTest(admin, admin1234, OrangeHRM4) -->
+                  <a name="loginTest(admin, admin1234, OrangeHRM)">
+                  </a> <!-- loginTest(admin, admin1234, OrangeHRM) -->
                   <span class="method-name">loginTest</span>
-                  <span class="parameters">(admin, admin1234, OrangeHRM4)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.check24.reports.ExtentLogger.pass(ExtentLogger.java:11)
-	at com.check24.pages.LoginPage.enterUsername(LoginPage.java:19)
-	at com.check24.pages.LoginPage.loginToApplication(LoginPage.java:37)
+                  <span class="parameters">(admin, admin1234, OrangeHRM)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: txtUsername (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.check24.utils.SeleniumUtils.waitUntilElementPresent(SeleniumUtils.java:36)
+	at com.check24.utils.SeleniumUtils.sendKeys(SeleniumUtils.java:25)
+	at com.check24.pages.LoginPage.enterUsername(LoginPage.java:21)
+	at com.check24.pages.LoginPage.loginToApplication(LoginPage.java:40)
 	at com.check24.tests.PaymentTest.loginTest(PaymentTest.java:23)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATSABU-7410&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\atsabu\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c08ee5f2e9132a4b7d8e58ee2d500953
+*** Element info: {Using=id, value=txtUsername}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 43 more
+... Removed 41 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Check the title of home page)                  </em>
+(Check the title of payment page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,16 +285,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.check24.tests.LoginTest')
-data.setCell(0, 3, 286);
+data.setCell(0, 3, 10050);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.check24.tests.PaymentTest')
-data.setCell(1, 3, 270);
+data.setCell(1, 3, 10037);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 556 ms</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -277,28 +329,28 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginTest(admin, admin1234, OrangeHRM)</span>
-                <span class="method-start">9085 ms</span>
+                <span class="method-start">8949 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9374 ms</span>
+                <span class="method-start">19005 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.check24.tests.PaymentTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10059 ms</span>
+                <span class="method-start">19745 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginTest(admin, admin1234, OrangeHRM4)</span>
-                <span class="method-start">17078 ms</span>
+                <span class="method-name">loginTest(admin, admin1234, OrangeHRM)</span>
+                <span class="method-start">25312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17349 ms</span>
+                <span class="method-start">35351 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
